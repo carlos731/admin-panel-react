@@ -1,0 +1,41 @@
+/* Signup.css */
+.profile-picture-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    width: 150px;           /* Define a largura do contêiner */
+    height: 150px;          /* Define a altura do contêiner */
+    margin: 0 auto;         /* Centraliza o contêiner no pai, se necessário */
+}
+
+.profile-picture {
+    width: 100%;            /* Ajusta a largura para preencher o contêiner */
+    height: 100%;           /* Ajusta a altura para preencher o contêiner */
+    border-radius: 50%;    /* Faz a imagem ficar em forma de círculo */
+    object-fit: cover;     /* Ajusta a imagem para cobrir o contêiner */
+    cursor: pointer;
+}
+
+.profile-picture-remove {
+    position: absolute;
+    top: 5px;              /* Ajusta a posição vertical para dentro do círculo */
+    right: 5px;            /* Ajusta a posição horizontal para dentro do círculo */
+    background-color: #f00;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;           /* Garante que o botão fique sobre a imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao botão */
+}
+
+.profile-picture-remove:hover {
+    background-color: #c00;
+}
